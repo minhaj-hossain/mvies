@@ -23,8 +23,9 @@ export function stripHtml(html) {
 }
 
 export function getYear(show) {
-  if (!show?.premiered) return 'N/A'
-  return show.premiered.slice(0, 4)
+  if (show?.premiered) return show.premiered.slice(0, 4)
+  if (show?.ended) return show.ended.slice(0, 4)
+  return 'N/A'
 }
 
 export function getRating(show) {

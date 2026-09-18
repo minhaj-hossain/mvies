@@ -39,6 +39,7 @@ export default function MovieCard({ show, onSeeDetails }) {
         )}
         <button
           onClick={() => onSeeDetails(show)}
+          aria-label={`View details for ${show.name}`}
           className="min-h-[44px] mt-3 w-full rounded-xl bg-amber-400 px-4 py-2.5 text-sm font-bold text-slate-950 transition hover:bg-amber-300 active:scale-95"
         >
           See Details
