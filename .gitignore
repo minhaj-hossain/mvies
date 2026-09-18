@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+# build
+dist/
+dist-ssr/
+# vite
+*.local
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+# os
+.DS_Store
+Thumbs.db
+# logs
+logs/
+*.log
+npm-debug.log*
+# env
+.env
+.env.local
